@@ -27,6 +27,7 @@ include_directories(${CMAKE_SOURCE_DIR}/src/ncurses/include)
 include_directories(${CMAKE_SOURCE_DIR}/src/external/libcxx/include)
 include_directories(${CMAKE_SOURCE_DIR}/src/external/libcxxabi/include)
 include_directories(${CMAKE_SOURCE_DIR}/src/launchd/liblaunch)
+include_directories(${CMAKE_SOURCE_DIR}/src/kernel/libsyscall/wrappers/libproc)
 
 include(InstallSymlink)
 set(BINARY_PACKAGING_MODE ON)

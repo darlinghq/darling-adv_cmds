@@ -44,8 +44,11 @@ add_darling_executable(stty stty/cchar.c  stty/gfmt.c  stty/key.c  stty/modes.c 
 #add_darling_executable(pkill pkill/pkill.c) # doesn't build yet, requires sysmon.h
 add_darling_executable(ps ps/fmt.c  ps/keyword.c  ps/nlist.c  ps/print.c  ps/ps.c  ps/tasks.c)
 
-install(TARGETS locale stty tabs tty whois ps
+install(TARGETS locale tabs tty whois
 	DESTINATION libexec/darling/usr/bin)
+
+install(TARGETS stty ps
+	DESTINATION libexec/darling/bin)
 
 
 set(man1

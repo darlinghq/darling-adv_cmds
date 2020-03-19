@@ -13,12 +13,12 @@ add_definitions(-D__APPLE__ -D__DYNAMIC__)
 
 # Hide warnings
 add_definitions(
-	-Wno-#warnings
-	-Wno-string-plus-int
+	-w
+	-nostdinc
 )
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -U_POSIX_C_SOURCE -D__DARWIN_UNIX03 -nostdinc -fblocks -fPIC -ggdb -O0")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -U_POSIX_C_SOURCE -D__DARWIN_UNIX03 -nostdinc -nostdinc++ -fblocks -fPIC -ggdb -O0")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -U_POSIX_C_SOURCE -D__DARWIN_UNIX03 -fblocks -fPIC -ggdb -O0")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -U_POSIX_C_SOURCE -D__DARWIN_UNIX03 -fblocks -fPIC -ggdb -O0")
 
 include_directories(${CMAKE_SOURCE_DIR}/src/libc/include/FreeBSD)
 include_directories(${CMAKE_SOURCE_DIR}/src/libc/gen)

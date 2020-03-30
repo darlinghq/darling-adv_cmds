@@ -7,8 +7,6 @@ if(COMMAND cmake_policy)
 endif(COMMAND cmake_policy)
 
 include(darling_exe)
-add_definitions(-DTARGET_OS_MAC=1)
-add_definitions(-D__APPLE__ -D__DYNAMIC__)
 # add_definitions(-DSUPPORT_UTMPX)
 
 # Hide warnings

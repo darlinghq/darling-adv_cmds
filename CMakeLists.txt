@@ -18,15 +18,6 @@ add_definitions(
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -U_POSIX_C_SOURCE -D__DARWIN_UNIX03 -fblocks -fPIC -ggdb -O0")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -U_POSIX_C_SOURCE -D__DARWIN_UNIX03 -fblocks -fPIC -ggdb -O0")
 
-include_directories(${CMAKE_SOURCE_DIR}/src/libc/include/FreeBSD)
-include_directories(${CMAKE_SOURCE_DIR}/src/libc/gen)
-include_directories(${CMAKE_SOURCE_DIR}/src/libc/darwin)
-include_directories(${CMAKE_SOURCE_DIR}/src/ncurses/include)
-include_directories(BEFORE ${CMAKE_SOURCE_DIR}/src/external/libcxx/include)
-include_directories(${CMAKE_SOURCE_DIR}/src/external/libcxxabi/include)
-include_directories(${CMAKE_SOURCE_DIR}/src/launchd/liblaunch)
-include_directories(${CMAKE_SOURCE_DIR}/src/kernel/libsyscall/wrappers/libproc)
-
 include(InstallSymlink)
 set(BINARY_PACKAGING_MODE ON)
 

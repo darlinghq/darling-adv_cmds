@@ -88,13 +88,13 @@
 
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 typedef union YYSTYPE
-#line 123 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 123 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
 {
 	int32_t ch;
 	wchar_t str[BUFSIZE];
 }
 /* Line 1529 of yacc.c.  */
-#line 98 "/Users/ariel/Library/Developer/Xcode/DerivedData/adv_cmds-gklnqbcrcqescghbhgkvtzrtwvdp/Build/Intermediates.noindex/adv_cmds.build/Release/colldef.build/DerivedSources/y.tab.h"
+#line 98 "/Users/thomasa/Library/Developer/Xcode/DerivedData/adv_cmds-gcqksaoexabncqfyxdglupyaedsy/Build/Intermediates.noindex/adv_cmds.build/Release/colldef.build/DerivedSources/y.tab.h"
 	YYSTYPE;
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1

@@ -100,7 +100,7 @@
 
 
 /* Copy the first part of user declarations.  */
-#line 1 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 1 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
 
 /*-
  * Copyright (c) 1993
@@ -209,7 +209,7 @@ static void usage(void);
 
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 typedef union YYSTYPE
-#line 89 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 89 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
 {
     int32_t	rune;
     int		i;
@@ -218,7 +218,7 @@ typedef union YYSTYPE
     rune_list	*list;
 }
 /* Line 193 of yacc.c.  */
-#line 222 "/Users/ariel/Library/Developer/Xcode/DerivedData/adv_cmds-gklnqbcrcqescghbhgkvtzrtwvdp/Build/Intermediates.noindex/adv_cmds.build/Release/mklocale.build/DerivedSources/y.tab.c"
+#line 222 "/Users/thomasa/Library/Developer/Xcode/DerivedData/adv_cmds-gcqksaoexabncqfyxdglupyaedsy/Build/Intermediates.noindex/adv_cmds.build/Release/mklocale.build/DerivedSources/y.tab.c"
 	YYSTYPE;
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1
@@ -231,7 +231,7 @@ typedef union YYSTYPE
 
 
 /* Line 216 of yacc.c.  */
-#line 235 "/Users/ariel/Library/Developer/Xcode/DerivedData/adv_cmds-gklnqbcrcqescghbhgkvtzrtwvdp/Build/Intermediates.noindex/adv_cmds.build/Release/mklocale.build/DerivedSources/y.tab.c"
+#line 235 "/Users/thomasa/Library/Developer/Xcode/DerivedData/adv_cmds-gcqksaoexabncqfyxdglupyaedsy/Build/Intermediates.noindex/adv_cmds.build/Release/mklocale.build/DerivedSources/y.tab.c"
 
 #ifdef short
 # undef short
@@ -1451,12 +1451,12 @@ yyreduce:
   switch (yyn)
     {
         case 3:
-#line 119 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 119 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
     { dump_tables(); }
     break;
 
   case 6:
-#line 127 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 127 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
     { if (strcmp((yyvsp[(2) - (2)].str), "NONE") &&
 		      strcmp((yyvsp[(2) - (2)].str), "ASCII") &&
 		      strcmp((yyvsp[(2) - (2)].str), "UTF-8") &&
@@ -1473,7 +1473,7 @@ yyreduce:
     break;
 
   case 7:
-#line 141 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 141 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
     { new_locale.variable_len = strlen((yyvsp[(1) - (1)].str)) + 1;
 		  variable = xmalloc(new_locale.variable_len);
 		  strcpy(variable, (yyvsp[(1) - (1)].str));
@@ -1481,27 +1481,27 @@ yyreduce:
     break;
 
   case 8:
-#line 146 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 146 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
     { warnx("the INVALID keyword is deprecated"); }
     break;
 
   case 9:
-#line 148 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 148 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
     { set_map(&types, (yyvsp[(2) - (2)].list), (yyvsp[(1) - (2)].i)); }
     break;
 
   case 10:
-#line 150 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 150 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
     { set_map(&maplower, (yyvsp[(2) - (2)].list), 0); }
     break;
 
   case 11:
-#line 152 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 152 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
     { set_map(&mapupper, (yyvsp[(2) - (2)].list), 0); }
     break;
 
   case 12:
-#line 154 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 154 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
     {
 			if (((yyvsp[(2) - (2)].list)->map >= 0) && ((yyvsp[(2) - (2)].list)->map <= 255)) { /* Data corruption otherwise */
 				set_digitmap(&types, (yyvsp[(2) - (2)].list));
@@ -1510,7 +1510,7 @@ yyreduce:
     break;
 
   case 13:
-#line 160 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 160 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
     {
 		  int i;
 		  if (strlen((yyvsp[(2) - (3)].str)) > CHARCLASS_NAME_MAX)
@@ -1530,7 +1530,7 @@ yyreduce:
     break;
 
   case 14:
-#line 179 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 179 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
     {
 		    (yyval.list) = (rune_list *)xmalloc(sizeof(rune_list));
 		    (yyval.list)->min = (yyvsp[(1) - (1)].rune);
@@ -1540,7 +1540,7 @@ yyreduce:
     break;
 
   case 15:
-#line 186 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 186 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
     {
 		    (yyval.list) = (rune_list *)xmalloc(sizeof(rune_list));
 		    (yyval.list)->min = (yyvsp[(1) - (3)].rune);
@@ -1550,7 +1550,7 @@ yyreduce:
     break;
 
   case 16:
-#line 193 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 193 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
     {
 		    (yyval.list) = (rune_list *)xmalloc(sizeof(rune_list));
 		    (yyval.list)->min = (yyvsp[(2) - (2)].rune);
@@ -1560,7 +1560,7 @@ yyreduce:
     break;
 
   case 17:
-#line 200 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 200 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
     {
 		    (yyval.list) = (rune_list *)xmalloc(sizeof(rune_list));
 		    (yyval.list)->min = (yyvsp[(2) - (4)].rune);
@@ -1570,7 +1570,7 @@ yyreduce:
     break;
 
   case 18:
-#line 209 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 209 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
     {
 		    (yyval.list) = (rune_list *)xmalloc(sizeof(rune_list));
 		    (yyval.list)->min = (yyvsp[(2) - (4)].rune);
@@ -1581,7 +1581,7 @@ yyreduce:
     break;
 
   case 19:
-#line 217 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 217 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
     {
 		    (yyval.list) = (rune_list *)xmalloc(sizeof(rune_list));
 		    (yyval.list)->min = (yyvsp[(3) - (5)].rune);
@@ -1592,7 +1592,7 @@ yyreduce:
     break;
 
   case 20:
-#line 225 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 225 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
     {
 		    (yyval.list) = (rune_list *)xmalloc(sizeof(rune_list));
 		    (yyval.list)->min = (yyvsp[(2) - (7)].rune);
@@ -1603,7 +1603,7 @@ yyreduce:
     break;
 
   case 21:
-#line 233 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 233 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
     {
 		    (yyval.list) = (rune_list *)xmalloc(sizeof(rune_list));
 		    (yyval.list)->min = (yyvsp[(3) - (8)].rune);
@@ -1615,7 +1615,7 @@ yyreduce:
 
 
 /* Line 1267 of yacc.c.  */
-#line 1619 "/Users/ariel/Library/Developer/Xcode/DerivedData/adv_cmds-gklnqbcrcqescghbhgkvtzrtwvdp/Build/Intermediates.noindex/adv_cmds.build/Release/mklocale.build/DerivedSources/y.tab.c"
+#line 1619 "/Users/thomasa/Library/Developer/Xcode/DerivedData/adv_cmds-gcqksaoexabncqfyxdglupyaedsy/Build/Intermediates.noindex/adv_cmds.build/Release/mklocale.build/DerivedSources/y.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);
@@ -1829,7 +1829,7 @@ yyreturn:
 }
 
 
-#line 241 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 241 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
 
 
 int debug;

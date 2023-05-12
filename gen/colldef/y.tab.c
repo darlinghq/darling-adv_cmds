@@ -114,7 +114,7 @@
 
 
 /* Copy the first part of user declarations.  */
-#line 1 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 1 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
 
 /*-
  * Copyright (c) 1995 Alex Tatmanjants <alex@elvisti.kiev.ua>
@@ -258,13 +258,13 @@ const char *out_file = "LC_COLLATE";
 
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 typedef union YYSTYPE
-#line 123 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 123 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
 {
 	int32_t ch;
 	wchar_t str[BUFSIZE];
 }
 /* Line 193 of yacc.c.  */
-#line 268 "/Users/ariel/Library/Developer/Xcode/DerivedData/adv_cmds-gklnqbcrcqescghbhgkvtzrtwvdp/Build/Intermediates.noindex/adv_cmds.build/Release/colldef.build/DerivedSources/y.tab.c"
+#line 268 "/Users/thomasa/Library/Developer/Xcode/DerivedData/adv_cmds-gcqksaoexabncqfyxdglupyaedsy/Build/Intermediates.noindex/adv_cmds.build/Release/colldef.build/DerivedSources/y.tab.c"
 	YYSTYPE;
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1
@@ -277,7 +277,7 @@ typedef union YYSTYPE
 
 
 /* Line 216 of yacc.c.  */
-#line 281 "/Users/ariel/Library/Developer/Xcode/DerivedData/adv_cmds-gklnqbcrcqescghbhgkvtzrtwvdp/Build/Intermediates.noindex/adv_cmds.build/Release/colldef.build/DerivedSources/y.tab.c"
+#line 281 "/Users/thomasa/Library/Developer/Xcode/DerivedData/adv_cmds-gcqksaoexabncqfyxdglupyaedsy/Build/Intermediates.noindex/adv_cmds.build/Release/colldef.build/DerivedSources/y.tab.c"
 
 #ifdef short
 # undef short
@@ -1596,7 +1596,7 @@ yyreduce:
   switch (yyn)
     {
         case 2:
-#line 137 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 137 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	FILE *fp;
 	int localedef = (stringdb != NULL);
@@ -1867,7 +1867,7 @@ yyreduce:
     break;
 
   case 14:
-#line 420 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 420 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	int i;
 	if ((stringdb = dbopen(NULL, O_CREAT | O_RDWR, 0600, DB_HASH, NULL)) == NULL)
@@ -1879,7 +1879,7 @@ yyreduce:
     break;
 
   case 23:
-#line 441 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 441 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	int len;
 	struct symbol *s;
@@ -1898,7 +1898,7 @@ yyreduce:
     break;
 
   case 24:
-#line 457 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 457 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	struct symbol *s;
 	if (wcslen((yyvsp[(2) - (2)].str)) > CHARMAP_SYMBOL_LEN)
@@ -1910,7 +1910,7 @@ yyreduce:
     break;
 
   case 27:
-#line 470 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 470 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	prev_line = LINE_NONE;
 	prev_elem = NULL;
@@ -1919,7 +1919,7 @@ yyreduce:
     break;
 
   case 28:
-#line 476 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 476 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	if (directive_count > 0)
 		yyerror("Multiple order_start lines not allowed");
@@ -1930,7 +1930,7 @@ yyreduce:
     break;
 
   case 29:
-#line 483 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 483 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	if (directive_count >= COLL_WEIGHTS_MAX)
 		yyerror("only COLL_WEIGHTS_MAX weights allowed");
@@ -1941,14 +1941,14 @@ yyreduce:
     break;
 
   case 30:
-#line 491 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 491 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	info.directive[directive_count] = (yyvsp[(1) - (1)].ch);
 }
     break;
 
   case 31:
-#line 494 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 494 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	int direction = ((yyvsp[(3) - (3)].ch) & DIRECTIVE_DIRECTION_MASK);
 	int prev = (info.directive[directive_count] & DIRECTIVE_DIRECTION_MASK);
@@ -1959,7 +1959,7 @@ yyreduce:
     break;
 
   case 35:
-#line 506 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 506 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	struct symbol *s = getsymbol((yyvsp[(1) - (1)].str), EXISTS);
 	if (s->val != PRI_UNDEFINED)
@@ -1991,7 +1991,7 @@ yyreduce:
     break;
 
   case 36:
-#line 533 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 533 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	int i;
 	struct symbol *s = getsymbol((yyvsp[(1) - (3)].str), EXISTS);
@@ -2010,12 +2010,12 @@ yyreduce:
     break;
 
   case 37:
-#line 548 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 548 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     { weight_index = 0; allow_ellipsis = 1; }
     break;
 
   case 38:
-#line 548 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 548 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	int i;
 	if (prev_line == LINE_ELLIPSIS)
@@ -2051,7 +2051,7 @@ yyreduce:
     break;
 
   case 39:
-#line 580 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 580 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	if (sym_undefined.val != PRI_UNDEFINED)
 		yyerror("Multiple UNDEFINED lines not allowed");
@@ -2062,7 +2062,7 @@ yyreduce:
     break;
 
   case 40:
-#line 586 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 586 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	int i;
 	if (weight_index == 0) {
@@ -2077,12 +2077,12 @@ yyreduce:
     break;
 
   case 44:
-#line 602 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 602 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     { weight_index = 0; }
     break;
 
   case 45:
-#line 602 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 602 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	int i;
 	struct symbol *s = getsymbol((yyvsp[(1) - (3)].str), EXISTS);
@@ -2201,12 +2201,12 @@ yyreduce:
     break;
 
   case 46:
-#line 717 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 717 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     { weight_index = 0; allow_ellipsis = 1; }
     break;
 
   case 47:
-#line 717 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 717 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	int i;
 	if (prev_line == LINE_ELLIPSIS)
@@ -2242,12 +2242,12 @@ yyreduce:
     break;
 
   case 48:
-#line 749 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 749 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     { weight_index = 0; allow_ellipsis = 1; }
     break;
 
   case 49:
-#line 749 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 749 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	int i;
 
@@ -2281,7 +2281,7 @@ yyreduce:
     break;
 
   case 53:
-#line 784 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 784 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	struct symbol *s;
 	if (weight_index >= directive_count)
@@ -2294,7 +2294,7 @@ yyreduce:
     break;
 
   case 54:
-#line 793 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 793 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	if (weight_index >= directive_count)
 		yyerror("More weights than specified by order_start");
@@ -2305,7 +2305,7 @@ yyreduce:
     break;
 
   case 55:
-#line 800 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 800 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	if (weight_index >= directive_count)
 		yyerror("More weights than specified by order_start");
@@ -2314,7 +2314,7 @@ yyreduce:
     break;
 
   case 56:
-#line 805 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 805 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	if (weight_index >= directive_count)
 		yyerror("More weights than specified by order_start");
@@ -2325,7 +2325,7 @@ yyreduce:
     break;
 
   case 58:
-#line 815 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 815 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	int len = wcslen((yyvsp[(1) - (2)].str));
 	struct symbol *s;
@@ -2340,7 +2340,7 @@ yyreduce:
     break;
 
   case 59:
-#line 827 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 827 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	if (wcslen((yyvsp[(4) - (4)].str)) + 1 > STR_LEN)
 		yyerror("%s substitution is too long", charname((yyvsp[(2) - (4)].ch)));
@@ -2349,7 +2349,7 @@ yyreduce:
     break;
 
   case 63:
-#line 838 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 838 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	curr_chain[0] = (yyvsp[(1) - (2)].ch);
 	curr_chain[1] = (yyvsp[(2) - (2)].ch);
@@ -2360,7 +2360,7 @@ yyreduce:
     break;
 
   case 64:
-#line 845 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 845 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	static wchar_t tb[2];
 	tb[0] = (yyvsp[(2) - (2)].ch);
@@ -2373,7 +2373,7 @@ yyreduce:
     break;
 
   case 65:
-#line 855 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 855 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	struct __collate_st_char_pri *p = getpri((yyvsp[(1) - (1)].ch));
 	if (p->pri[0] >= 0)
@@ -2384,7 +2384,7 @@ yyreduce:
     break;
 
   case 66:
-#line 862 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 862 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	struct __collate_st_chain_pri *c = getchain(curr_chain, NOTEXISTS);
 	c->pri[0] = c->pri[1] = prim_pri;
@@ -2393,7 +2393,7 @@ yyreduce:
     break;
 
   case 67:
-#line 867 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 867 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	u_int i;
 	struct __collate_st_char_pri *p;
@@ -2412,35 +2412,35 @@ yyreduce:
     break;
 
   case 68:
-#line 882 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 882 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	prim_pri = sec_pri;
 }
     break;
 
   case 69:
-#line 885 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 885 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	prim_pri = sec_pri;
 }
     break;
 
   case 70:
-#line 889 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 889 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	sec_pri++;
 }
     break;
 
   case 71:
-#line 892 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 892 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	sec_pri++;
 }
     break;
 
   case 76:
-#line 902 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 902 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	struct __collate_st_char_pri *p = getpri((yyvsp[(1) - (1)].ch));
 	if (p->pri[0] >= 0)
@@ -2451,7 +2451,7 @@ yyreduce:
     break;
 
   case 77:
-#line 909 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 909 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	u_int i;
 	struct __collate_st_char_pri *p;
@@ -2471,7 +2471,7 @@ yyreduce:
     break;
 
   case 78:
-#line 925 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 925 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	struct __collate_st_chain_pri *c = getchain(curr_chain, NOTEXISTS);
 	c->pri[0] = prim_pri;
@@ -2480,7 +2480,7 @@ yyreduce:
     break;
 
   case 79:
-#line 930 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 930 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	struct __collate_st_char_pri *p = getpri((yyvsp[(1) - (1)].ch));
 	if (p->pri[0] >= 0)
@@ -2491,7 +2491,7 @@ yyreduce:
     break;
 
   case 80:
-#line 937 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 937 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	u_int i;
 	struct __collate_st_char_pri *p;
@@ -2511,7 +2511,7 @@ yyreduce:
     break;
 
   case 81:
-#line 953 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 953 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
     {
 	struct __collate_st_chain_pri *c = getchain(curr_chain, NOTEXISTS);
 	c->pri[0] = prim_pri;
@@ -2521,7 +2521,7 @@ yyreduce:
 
 
 /* Line 1267 of yacc.c.  */
-#line 2525 "/Users/ariel/Library/Developer/Xcode/DerivedData/adv_cmds-gklnqbcrcqescghbhgkvtzrtwvdp/Build/Intermediates.noindex/adv_cmds.build/Release/colldef.build/DerivedSources/y.tab.c"
+#line 2525 "/Users/thomasa/Library/Developer/Xcode/DerivedData/adv_cmds-gcqksaoexabncqfyxdglupyaedsy/Build/Intermediates.noindex/adv_cmds.build/Release/colldef.build/DerivedSources/y.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);
@@ -2735,7 +2735,7 @@ yyreturn:
 }
 
 
-#line 959 "/Users/ariel/git/darling/src/external/adv_cmds/colldef/parse.y"
+#line 959 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/colldef/parse.y"
 
 int
 main(int ac, char **av)

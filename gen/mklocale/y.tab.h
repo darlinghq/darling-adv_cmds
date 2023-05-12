@@ -74,7 +74,7 @@
 
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 typedef union YYSTYPE
-#line 89 "/Users/ariel/git/darling/src/external/adv_cmds/mklocale/yacc.y"
+#line 89 "/Volumes/CaseSensitive/git/distribution-macOS/adv_cmds/mklocale/yacc.y"
 {
     int32_t	rune;
     int		i;
@@ -83,7 +83,7 @@ typedef union YYSTYPE
     rune_list	*list;
 }
 /* Line 1529 of yacc.c.  */
-#line 87 "/Users/ariel/Library/Developer/Xcode/DerivedData/adv_cmds-gklnqbcrcqescghbhgkvtzrtwvdp/Build/Intermediates.noindex/adv_cmds.build/Release/mklocale.build/DerivedSources/y.tab.h"
+#line 87 "/Users/thomasa/Library/Developer/Xcode/DerivedData/adv_cmds-gcqksaoexabncqfyxdglupyaedsy/Build/Intermediates.noindex/adv_cmds.build/Release/mklocale.build/DerivedSources/y.tab.h"
 	YYSTYPE;
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1
